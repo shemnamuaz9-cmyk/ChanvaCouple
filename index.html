@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   overflow: hidden;
 }
 
@@ -97,7 +97,7 @@ button {
 
   <div class="buttons">
     <button class="yes" onclick="yes()">Yes 💖</button>
-    <button class="no" onmouseover="moveNo()">No 🙃</button>
+    <button class="no" ontouchstart="moveNo()" onmouseover="moveNo()">No 🙃</button>
   </div>
 </div>
 
@@ -123,8 +123,9 @@ function yes() {
   document.body.innerHTML = `
     <h1 style="color:white;font-size:32px;text-align:center;">
       YAYYY 💕😭<br><br>
-      You said YES 💖<br>
-      Happy Valentine’s Day, Chanvi 🌹<br><br>
+      You said YES 💖<br><br>
+      <span style="font-size:38px;">I love you, Ananya ❤️</span><br><br>
+      Happy Valentine’s Day 🌹<br><br>
       ♫ Love is in the air ♫
     </h1>`;
 }
